@@ -1,40 +1,81 @@
-
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu K-Riko</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-</head>
-<style>
-    .orbitron {
-        font-family: 'Orbitron', sans-serif;
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     
-    }
-    .monoton {
-        font-family: 'Monoton', sans-serif;
-    }
+    <style>
+        body { background-color: #9142B5; }
+        .orbitron { font-family: 'Orbitron', sans-serif; }
+        .monoton {
+            font-family: 'Monoton', sans-serif;
+            letter-spacing: 0px;
+            word-spacing: 10px;
+        }
+        @layer utilities {
+            .bg-menu-base { background-color: #B961D7; }
+            .bg-menu-item { background-color: #5a3e68; }
+            .text-neon-green { color: #39ff14; }
+            .text-neon-pink { color: #d900d9; }
+            .text-neon-cyan { color: #00e5ff; }
+        }
+    </style>
+</head>
 
+<body class="p-2 min-h-screen bg-menu-base bg-[url('./img/bg-pattern.svg')] 
+bg-repeat bg-[length:500px_500px] bg-blend-soft-light">
+    
+    <h1 class="monoton h-screen text-white text-4xl text-center py-20 flex justify-center items-center">
+        Menu K-Riko
+    </h1>
 
-</style>
-<body>
-    <!-- <img src="./img/Menu celular.png" style="width:100% ;" alt=""> -->
-    <h1 class="monoton text-2xl text-center">Menu K-Riko</h1>
-    <!--Completos-->
-    <div>
-        <p></p>
-        <ul>
-            <li></li>
-        </ul>
+    <div class="orbitron bg-menu-base p-2 sm:p-6 rounded-[30px] shadow-2xl w-full max-w-3xl mx-auto text-white overflow-hidden">
+        <h2 class="monoton text-3xl text-center mb-6">Completos</h2>
+        
+        <div class="grid grid-cols-[1.5fr_1fr_1fr_1fr] px-2 pb-2 text-gray-200 text-[10px] xs:text-xs text-center items-end mb-2">
+            <div class="font-bold text-left">Nombre</div>
+            <div class="font-bold text-center">Salchicha</div>
+            <div class="font-bold text-center leading-tight">Ass o<br>mechada</div>
+            <div class="font-bold text-center">Champiñon</div>
+        </div>
+
+        <ul id="menu-completos" class="flex flex-col gap-3">
+            </ul>
     </div>
-    <!--<Empanadas -->
-    <div></div>
-    <!--Otros-->
-    <div></div>
-    <!--Bebestibles-->
+
+    <script>
+        // Función para cargar y renderizar el menú
+        async function loadMenu() {
+            try {
+                // Asumiendo que tu archivo se llama menu.json en la misma carpeta
+                const response = await fetch('./data_menu/completos.json');
+                const data = await response.json();
+                const container = document.getElementById('menu-completos');
+
+                // Mapeo de datos al HTML
+                container.innerHTML = data.completos.map(item => `
+                    <li class="bg-menu-item rounded-2xl p-3 grid grid-cols-[1.5fr_1fr_1fr_1fr] items-center shadow-lg border border-white/5">
+                        <div class="flex flex-col pr-1">
+                            <span class="text-sm xs:text-lg font-bold uppercase tracking-tight leading-none">${item.nombre}</span>
+                            <span class="text-[9px] text-gray-300 leading-tight">${item.ingredientes}</span>
+                        </div>
+                        <div class="text-sm xs:text-xl font-bold text-neon-green text-center">$${item.salchicha}</div>
+                        <div class="text-sm xs:text-xl font-bold text-neon-pink text-center">$${item.mechada}</div>
+                        <div class="text-sm xs:text-xl font-bold text-neon-cyan text-center">$${item.champinon}</div>
+                    </li>
+                `).join('');
+            } catch (error) {
+                console.error("Error cargando el menú:", error);
+            }
+        }
+
+        // Ejecutar carga al iniciar
+        loadMenu();
+    </script>
 </body>
 </html>

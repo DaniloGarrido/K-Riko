@@ -1,0 +1,46 @@
+{
+  "completos": [
+    {
+      "nombre": "Italiano",
+      "ingredientes": "(Tomate, palta, mayonesa)",
+      "salchicha": "2000",
+      "mechada": "3700",
+      "champinon": "2600"
+    },
+    {
+      "nombre": "Completo",
+      "ingredientes": "(Americana, chucrut y tomate)",
+      "salchicha": "1800",
+      "mechada": "3700",
+      "champinon": "2400"
+    },
+    {
+      "nombre": "Dinámico",
+      "ingredientes": "(Americana, chucrut, tomate y palta)",
+      "salchicha": "2300",
+      "mechada": "3700",
+      "champinon": "2400"
+    },
+    {
+      "nombre": "Alemán",
+      "ingredientes": "(Americana, tomate)",
+      "salchicha": "1500",
+      "mechada": "3700",
+      "champinon": "2400"
+    },
+    {
+      "nombre": "Solo Palta",
+      "ingredientes": "(Palta)",
+      "salchicha": "1600",
+      "mechada": "3700",
+      "champinon": "2400"
+    },
+    {
+      "nombre": "Solo Tomate",
+      "ingredientes": "(Tomate)",
+      "salchicha": "1500",
+      "mechada": "3700",
+      "champinon": "2400"
+    }
+  ]
+}
