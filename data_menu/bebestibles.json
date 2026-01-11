@@ -1,0 +1,49 @@
+{
+  "bebestibles": [
+    {
+      "nombre": "Bebida express",
+      "ingredientes": "(Bebida express Coca o CCU)",
+      "precio": "2000"
+    },
+    {
+      "nombre": "Bebida fruna",
+      "ingredientes": "(500 ml)",
+      "precio": "2000"
+    },
+    {
+      "nombre": "CCU lata",
+      "ingredientes": "(340 ml)",
+      "precio": "2000"
+    },
+    {
+      "nombre": "Coca-Cola lata",
+      "ingredientes": "(340 ml)",
+      "precio": "2000"
+    },
+    {
+      "nombre": "Agua fruna",
+      "ingredientes": "(Agua con o sin gas fruna)",
+      "precio": "2000"
+    },
+    {
+      "nombre": "Agua mineral",
+      "ingredientes": "(Agua con o sin gas, variedades)",
+      "precio": "2000"
+    },
+    {
+      "nombre": "Néctar botella",
+      "ingredientes": "(Néctar variedades)",
+      "precio": "2000"
+    },
+    {
+      "nombre": "Te",
+      "ingredientes": "(Infusión de te negro)",
+      "precio": "2000"
+    },
+    {
+      "nombre": "Café",
+      "ingredientes": "(Infusión de café)",
+      "precio": "2000"
+    }
+  ]
+}
