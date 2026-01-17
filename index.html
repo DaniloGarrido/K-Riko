@@ -1,73 +1,20 @@
-<html lang="es"class="scroll-smooth">
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu K-Riko</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="icon" type="image/png" href="./img/svg/Empanada.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/img/svg/Empanada.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu Digital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron:wght@400..900&display=swap"
+    rel="stylesheet">
 </head>
 
-<body class="p-2 min-h-screen bg-menu-base bg-[url('./img/bg-pattern.svg')] 
-  bg-center   bg-blend-soft-light">
-    
-    <h1 class="monoton h-screen text-white text-6xl text-center py-20 flex justify-center items-center">
-        Menu <br> K-Riko
-    </h1>
-    
-    <!-- Indice -->
-    <div class="h-screen pt-10 bg-menu-base rounded-[30px] text-center text-white w-full max-w-3xl mx-auto shadow-2xl">
-    <h3 class="monoton text-4xl mb-10 text-shadow-lg ">Indice</h3>
-        <div class="p-2  orbitron grid grid-cols-1 text-shadow-sm [&>a]:hover:text-purple-900 [&>a]:hover:text-shadow-yellow-200 [&>a]:mb-8 [&>a]:rounded-xl [&>a]:p-1 uppercase font-bold " >
-            <a href="#completos" class="bg-menu-item">Completos</a>
-            <a href="#empanadas" class="bg-menu-item">Empanadas</a>
-            <a href="#bebestibles" class="bg-menu-item">Bebestibles</a> 
-            <a href="#bebestibles" class="bg-menu-item">Otras frituras</a> 
-            <a href="#bebestibles" class="bg-menu-item">Sandwich</a> 
-        </div>
-    </div>
-
-    <!-- Contenedor Completos -->
-    <div id="completos" class=" orbitron bg-menu-base p-2 pt-10 mt-15 sm:p-6 rounded-[30px] shadow-2xl w-full max-w-3xl mx-auto text-white overflow-hidden">
-        
-            <h2 class="monoton text-4xl text-center mb-6  ">Completos</h2>
-        
-        <div class="border-t-1 border-purple-900 grid grid-cols-[1.5fr_1fr_1fr_1fr] px-2 pb-2 text-gray-200 text-[12px] xs:text-xs text-center items-end mb-2">
-            <div class="font-bold text-left">Nombre</div>
-            <div class="font-bold text-center">Salchicha</div>
-            <div class="font-bold text-center ">Ass <br>o<br>mechada</div>
-            <div class="font-bold text-center">Champiñon</div>
-        </div>
-
-        <ul id="menu-completos" class="flex flex-col gap-3">
-        </ul>
-    </div>
-    <!-- Contenedor Empanadas -->
-    <div id="empanadas" class="orbitron bg-menu-base pt-10 mt-15 p-2 sm:p-6 rounded-[30px] shadow-2xl w-full max-w-3xl mx-auto text-white overflow-hidden">
-        <h2 class="monoton text-4xl text-center mb-6">Empanadas</h2>
-        
-        <div class="grid grid-cols-[1.5fr_1fr] px-2 pb-2 text-gray-200 text-[13px] xs:text-xs text-center items-end mb-2">
-            <div class="font-bold text-left">Nombre</div>
-            <div class="font-bold text-right ">Precio</div>
-        </div>
-        <ul id="menu-empanadas" class="flex flex-col gap-3">
-        </ul>
-    </div>
-    <!-- Contenedor Bebestibles -->
-    <div id="bebestibles" class="orbitron bg-menu-base mt-15 p-2 pt-10 sm:p-6 rounded-[30px] shadow-2xl w-full max-w-3xl mx-auto text-white overflow-hidden">
-        <h2 class="monoton text-4xl text-center mb-6">Bebestibles</h2>
-        
-        <div class="grid grid-cols-[1.5fr_1fr] px-2 pb-2 text-gray-200 text-[13px] xs:text-xs text-center items-end mb-2">
-            <div class="font-bold text-left">Nombre</div>
-            <div class="font-bold text-right ">Precio</div>
-        </div>
-        <ul id="menu-bebestibles" class="flex flex-col gap-3">
-        </ul>
-    </div>
-
-    <script src="./js/carga_menu.js"></script>
+<body class="p-2 min-h-screen bg-menu-base bg-[url('/img/bg-pattern.svg')] bg-center bg-blend-soft-light">
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
 </body>
+
 </html>

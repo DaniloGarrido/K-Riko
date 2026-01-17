@@ -1,0 +1,22 @@
+{
+  "sandwich": [
+    {
+      "nombre": "Italiano",
+      "ingredientes": "(Tomate, palta, mayonesa)",
+      "churrasco": "3700",
+      "mechada": "2600"
+    },
+    {
+      "nombre": "Barros Luco",
+      "ingredientes": "(Queso derretido)",
+      "churrasco": "3700",
+      "mechada": "2400"
+    },
+    {
+      "nombre": "Chacarero",
+      "ingredientes": "(Porotos verdes, tomate)",
+      "churrasco": "3700",
+      "mechada": "2400"
+    }
+  ]
+}
