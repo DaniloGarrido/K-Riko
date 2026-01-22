@@ -267,10 +267,10 @@ const importFromJson = async (category) => {
     if (!confirm(`¿Reiniciar ${category} con datos originales?`)) return
     try {
         const paths = {
-            completos: '/data_menu/completos.json',
-            empanadas: '/data_menu/empanadas.json',
-            sandwich: '/data_menu/sandwich.json',
-            bebestibles: '/data_menu/bebestibles.json'
+            completos: 'data_menu/completos.json',
+            empanadas: 'data_menu/empanadas.json',
+            sandwich: 'data_menu/sandwich.json',
+            bebestibles: 'data_menu/bebestibles.json'
         }
         
         // Define default column structures for standard categories

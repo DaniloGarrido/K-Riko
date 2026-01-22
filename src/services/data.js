@@ -3,10 +3,10 @@ import { getDb, isConfigured } from '../firebase';
 import { ref as dbRef, get, set, update, onValue } from "firebase/database";
 
 const LOCAL_JSON_PATHS = {
-    completos: '/data_menu/completos.json',
-    empanadas: '/data_menu/empanadas.json',
-    sandwich: '/data_menu/sandwich.json',
-    bebestibles: '/data_menu/bebestibles.json'
+    completos: 'data_menu/completos.json',
+    empanadas: 'data_menu/empanadas.json',
+    sandwich: 'data_menu/sandwich.json',
+    bebestibles: 'data_menu/bebestibles.json'
 };
 
 const DEFAULT_SETTINGS = {
