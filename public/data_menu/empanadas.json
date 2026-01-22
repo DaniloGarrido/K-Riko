@@ -1,0 +1,49 @@
+{
+  "empanadas": [
+    {
+      "nombre": "Queso",
+      "ingredientes": "(Queso)",
+      "precio": "1500"
+    },
+    {
+      "nombre": "Mechada queso",
+      "ingredientes": "(Carne de res desmechada y queso)",
+      "precio": "2500"
+    },
+    {
+      "nombre": "Pollo queso",
+      "ingredientes": "(Pollo desmechado y queso)",
+      "precio": "2200"
+    },
+    {
+      "nombre": "Napolitana",
+      "ingredientes": "(Tomate, jamón, queso y un toque de orégano)",
+      "precio": "2000"
+    },
+    {
+      "nombre": "Champiqueso",
+      "ingredientes": "(Champiñones salteados y queso)",
+      "precio": "1800"
+    },
+    {
+      "nombre": "Pino",
+      "ingredientes": "(Pino de res)",
+      "precio": "2500"
+    },
+    {
+      "nombre": "Aceituna queso",
+      "ingredientes": "(Aceitunas y queso)",
+      "precio": "1800"
+    },
+    {
+      "nombre": "Camarón queso",
+      "ingredientes": "(Camarones salteados y queso)",
+      "precio": "2000"
+    },
+    {
+      "nombre": "Choclo queso",
+      "ingredientes": "(Choclo y queso)",
+      "precio": "2000"
+    }
+  ]
+}
